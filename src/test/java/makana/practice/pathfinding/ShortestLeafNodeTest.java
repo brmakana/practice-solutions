@@ -24,15 +24,15 @@ public class ShortestLeafNodeTest {
      * D    E   F     G
      * Shortest: 4 (C -> G)
      */
-    private Node createTree() {
-        Node root = new Node("root");
-        Node a = new Node("a"),
-                b = new Node("b"),
-                c = new Node("c"),
-                d = new Node("d"),
-                e = new Node("e"),
-                f = new Node("f"),
-                g = new Node("g");
+    private ShortestLeafNode.Node createTree() {
+        ShortestLeafNode.Node root = new ShortestLeafNode.Node("root");
+        ShortestLeafNode.Node a = new ShortestLeafNode.Node("a"),
+                b = new ShortestLeafNode.Node("b"),
+                c = new ShortestLeafNode.Node("c"),
+                d = new ShortestLeafNode.Node("d"),
+                e = new ShortestLeafNode.Node("e"),
+                f = new ShortestLeafNode.Node("f"),
+                g = new ShortestLeafNode.Node("g");
         root.getChildrenAndDistances().put(a, 1);
         root.getChildrenAndDistances().put(b, 4);
         root.getChildrenAndDistances().put(c, 3);

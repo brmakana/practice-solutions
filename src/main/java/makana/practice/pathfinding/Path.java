@@ -5,6 +5,6 @@ import lombok.Value;
 @Value
 public class Path {
 
-    private Node node;
+    private ShortestLeafNode.Node node;
     private int distance;
 }
